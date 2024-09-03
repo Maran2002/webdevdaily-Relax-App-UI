@@ -1,0 +1,127 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo', sans-serif;
+}
+
+/* Full-screen container with a dark background */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e5052;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Main card container */
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  height: 650px;
+  background: url('https://e0.pxfuel.com/wallpapers/305/724/desktop-wallpaper-tropical-waterfall.jpg') no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Overlay for darkening the background image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+/* Header section with text and circles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.circles {
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Footer section with activities */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Activity items container */
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-icon {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #29cf94;
+  border-radius: 50%;
+}
+
+.activity-name {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.activity-time {
+  font-size: 18px;
+  font-weight: 500;
+}
